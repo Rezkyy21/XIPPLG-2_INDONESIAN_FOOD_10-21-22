@@ -1,0 +1,556 @@
+:root {
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  background-image: url(/Assets/img/—Pngtree—illustration\ of\ kolak\ pisang\ indonesian_15347016.png);
+  background-size: cover; /* Membuat gambar mengisi seluruh elemen dengan mempertahankan rasio aspek */
+    background-position: center; /* Menempatkan gambar di tengah elemen */
+    background-repeat: no-repeat;
+    margin:0;
+    height:100vh;
+  
+}
+.navbar {
+  position: fixed; /* Navbar tetap di posisi atas halaman */
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 100%); /* Gradien putih */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk efek kedalaman */
+            z-index: 1000; /* Memastikan navbar di atas elemen lain */
+            display: flex;
+            justify-content: space-between; /* Menyebar elemen navbar ke kiri dan kanan */
+            align-items: center;
+            text-align: bold;
+            color: #060606;
+}
+.navbar-nav a{
+  right: 0; 
+  top: 0;
+  color: #060606;
+ text-align:bold;
+ font-size: 20px;
+ justify-content: flex-end;
+ margin-right: 20px;
+ margin-left: 40px;
+ margin-right: 20px;
+ margin-top: 0; 
+ margin-bottom: 0;
+ font-weight: bold;
+ 
+ 
+}
+.sign-up a{
+  color: #000000;
+  
+  padding: 7px 15px;
+  text-align: bold;
+  right: 20px;
+  justify-content: flex-end;
+  border-radius: 12px; 
+  font-size: 20px;
+  background-size: 40px;
+  margin-right: 22px;
+  
+  
+}
+.sign-up{
+  justify-content: space-between;
+
+}
+.navbar .navbar-main {
+color: #000000;
+font-size: 27px;
+}
+.hero {
+  text-align: center;
+  right:20px;
+  margin-left: 36%;
+font-size: 37px;
+color: #ffffff;
+box-shadow: #060606;
+min-height: 100vh;
+display: flex;
+align-items: center;
+-webkit-mask-image: linear-gradient(rgb(246, 246, 246) 85%, rgba(253, 253, 253, 0));
+mask-image: linear-gradient(rgb(255, 253, 253) 85%, rgba(255, 251, 251, 0));
+text-align: center;
+}
+.makanan{
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 100%); /* Gradien putih */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sedikit bayangan untuk efek kedalaman */
+            z-index: 1000; /* Memastikan navbar di atas elemen lain */
+            display: flex;
+            justify-content: space-between; /* Menyebar elemen navbar ke kiri dan kanan */
+            align-items: center;
+            text-align: bold;
+            color: #060606;
+}
+.mknn {
+  background-color: #1A4D2E;
+  background-size: cover; /* Membuat gambar mengisi seluruh elemen dengan mempertahankan rasio aspek */
+    background-position: center; /* Menempatkan gambar di tengah elemen */
+    background-repeat: no-repeat;
+    margin:0;
+    height:100vh;
+}
+.mknn h1{
+    min-height: 100vh;
+    margin-top: -8rem;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    
+    font-size: 35px;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+            
+}
+.mknn h2{
+  margin-top: -40rem;
+  padding-top:2rem;
+  padding-bottom:10rem;
+  margin-left: 10rem;
+  margin-right:10rem;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+          
+}
+.mknn .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mknn .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.mknn .row .menu-card-img-1{
+  
+  width: 80%;
+  height: 120%;
+  margin-top: -6rem;
+  
+}
+.mknn .row .menu-card-img-2{
+  
+  width: 80%;
+  height: 120%;
+  margin-top:-3rem;
+
+  
+}
+
+
+.mknn .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+.klnr {
+  background-color: #5a7c5d;
+  background-size: cover; /* Membuat gambar mengisi seluruh elemen dengan mempertahankan rasio aspek */
+    background-position: center; /* Menempatkan gambar di tengah elemen */
+    background-repeat: no-repeat;
+    margin:0;
+    height:100vh;
+}
+.klnr h1{
+    min-height: 100vh;
+    margin-top: -3rem;
+    padding-top:7rem;
+    padding-bottom:5rem;
+    
+    font-size: 38px;
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+            
+}
+.klnr h2{
+  margin-top: -38rem;
+  padding-top:2rem;
+  padding-bottom:10rem;
+  margin-left: 10rem;
+  margin-right:10rem;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+          
+}
+.klnr .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.klnr .row .menu-card {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.klnr .row .menu-card-img-1{
+  
+  width: 80%;
+  height: 120%;
+  margin-top: -5rem;
+  
+}
+.klnr .row .menu-card-img-2{
+  
+  width: 80%;
+  height: 120%;
+  margin-top:-3rem;
+
+  
+}
+
+
+.klnr .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+.abt{
+  background-color: #B99470;
+  background-size: cover;
+    background-position: center; /* Menempatkan gambar di tengah elemen */
+    background-repeat: no-repeat;
+    margin:0;
+    height:120vh;
+    background-size: cover;
+    background-size: auto;
+    
+}
+.abt h1{
+  min-height: 100vh;
+  margin-top: -3rem;
+  padding-top:7rem;
+  padding-bottom:5rem;
+  
+  font-size: 38px;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+          
+}
+.abt h2{
+margin-top: -38rem;
+padding-top:2rem;
+padding-bottom:10rem;
+margin-left: 10rem;
+margin-right:10rem;
+font-size: 14px;
+font-family: "Work Sans", sans-serif;
+color: #ffffff;
+text-align: center;
+        
+}
+.abt h3,h4{
+  color: #000000;
+}
+.abt .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  margin-top: -6rem;
+}
+
+.abt .abt-card-1 {
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+  background-color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.abt .abt-card-2 {
+  text-align: center;
+  border: 1px solid #000000;
+  padding: 1.5rem;
+  background-color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.abt h5{
+  padding-top:2rem;
+  padding-bottom:10rem;
+  margin-left: 10rem;
+  margin-right:10rem;
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
+  text-align: center;
+          
+  }
+  .mknn .row .menu-card img:hover{
+  transform: scale(1.1);
+  }
+  .klnr .row .menu-card img:hover{
+    transform: scale(1.1);
+    }
+  .mknn .row .popup-image{
+    position: fixed;
+    top:0; left:0;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    z-index: inherit;
+  }
+  .mknn .row .popup-image span{
+    margin-top: 10%;
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+
+  }
+  .mknn .row .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border:5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+
+  }
+
+  .popup-image {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+    overflow: hidden; 
+}
+
+
+.popup-image img {
+    max-width: 90%;
+    max-height: 70%;
+    object-fit: contain; 
+}
+
+.popup-image .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    user-select: none; 
+}
+.popup-image .span{
+  position: absolute;
+  margin-top: 10%;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  user-select: none; 
+}
+/* Untuk layar kecil seperti handphone (max-width: 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding-top: auto;
+  }
+
+  .sign-up {
+    padding-top: auto;
+    flex-direction: column;
+    text-align: center;
+    color: #000000;
+  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav a {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .sign-up a {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .hero {
+    margin-left: 0; /* Pusatkan teks hero */
+    font-size: 28px; /* Kurangi ukuran font di bagian hero */
+    padding: 20px;
+  }
+
+  .mknn, .klnr, .abt {
+    height: auto; /* Biarkan konten menyesuaikan ketinggian berdasarkan konten */
+    padding: 10px;
+  }
+
+  .mknn h1, .klnr h1, .abt h1 {
+    font-size: 24px; /* Ukuran judul lebih kecil */
+  }
+
+  .mknn h2, .klnr h2, .abt h2 {
+    font-size: 12px; /* Ukuran teks lebih kecil */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .mknn .row, .klnr .row {
+    flex-direction: column; /* Ubah tata letak menu menjadi vertikal */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mknn .row .menu-card, .klnr .row .menu-card {
+    width: 100%; /* Menu-card memenuhi lebar layar */
+    margin-bottom: 20px;
+  }
+
+  .mknn .row .menu-card-img-1, .klnr .row .menu-card-img-1 {
+    width: 100%;
+    height: auto; /* Gambar menyesuaikan lebar penuh */
+  }
+  .abt .row .abt-card{
+    width: 100%; /* Menu-card memenuhi lebar layar */
+    margin-bottom: 20px;
+  }
+  
+
+  .abt .row .abt-card-img-2 {
+    width: 100%;
+    height: auto; /* Gambar menyesuaikan lebar penuh */
+    justify-content: space-between;
+    
+  }
+  .abt .row .abt-card-img-1 {
+    width: 100%;
+    height: auto; /* Gambar menyesuaikan lebar penuh */
+    
+  }
+  .abt .row .abt-card-2{
+    margin-left: 56%;
+    width: 100%;
+    height: auto;
+  }
+  .abt h5{
+    text-align: center;
+  }
+  
+}
+
+/* Untuk layar tablet (max-width: 900px) */
+.navbar {
+  flex-direction: column;
+  text-align: center;
+  padding-top: auto;
+}
+
+.sign-up {
+  padding-top: auto;
+  flex-direction: column;
+  text-align: center;
+  color: #000000;
+}
+
+
+@media screen and (max-width: 768px) {
+.navbar {
+  flex-direction: column;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-nav a {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.sign-up a {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+  .hero {
+    font-size: 30px; /* Sedikit lebih besar dari handphone */
+    margin-left: 10%; /* Menggeser teks lebih ke tengah */
+  }
+
+  .mknn, .klnr, .abt {
+    height: auto; /* Sesuaikan tinggi */
+    padding: 20px;
+  }
+
+  .mknn h1, .klnr h1, .abt h1 {
+    font-size: 30px; /* Ukuran teks lebih kecil */
+  }
+
+  .mknn h2, .klnr h2, .abt h2 {
+    font-size: 14px; /* Sedikit lebih kecil dari versi desktop */
+  }
+
+  .mknn .row, .klnr .row {
+    flex-direction: column; /* Tata letak menu vertikal */
+  }
+
+  .mknn .row .menu-card, .klnr .row .menu-card {
+    width: 100%;
+  }
+
+  .mknn .row .menu-card-img-1, .klnr .row .menu-card-img-1 {
+    width: 90%; /* Gambar masih besar, tapi menyesuaikan layar */
+  }
+}
+
