@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indonesian Food</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    @vite('resources/css/app.css')
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
@@ -21,10 +22,10 @@
                     <span id="date-display" class="text-gray-300"></span>
                 </div>
                 <div class="flex items-center">
-                    <a href="#" id="sign-up-link" class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors">
-                        Sign in
-                    </a>
-                </div>
+    <a href="{{ route('login') }}" id="sign-up-link" class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors">
+        Sign in
+    </a>
+</div>
             </div>
         </div>
     </nav>

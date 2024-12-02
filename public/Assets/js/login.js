@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
  
      if (username === correctUsername && password ===correctPassword){
      alert('Login Berhasil');
-     window.location.href= 'index.html';
+     window.location.href= '/home';
      }else{
      alert('login gagal');
      }
