@@ -1,24 +1,3 @@
-// Select all menu card images and the popup elements
-const menuCards = document.querySelectorAll('.menu-card');
-const popupImage = document.querySelector('.popup-image');
-const popupClose = document.querySelector('.popup-image .close');
-const popupImg = popupImage.querySelector('img');
-
-
-//function untuk membuka popup dengah gambar
-menuCards.forEach(card => {
-  const img = card.querySelector('img');
-  img.addEventListener('click', () => {
-    popupImage.style.display = 'flex'; // memperlihatkan popup
-    popupImg.src = imgrendang.src; // Set the popup image source
-  });
-});
-
-//menutup popup saat tombol silang di pencet
-popupClose.addEventListener('click', () => {
-  popupImage.style.display = 'none'; // hilangkan pop up
-});
-
 function formatDate(date) {
     const options = { year: 'numeric', month: 'long', day: 'numeric',hour:'numeric',minute:'numeric',second:'numeric'  };
     return date.toLocaleDateString(undefined, options);
@@ -44,4 +23,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
         e.preventDefault(); // Mencegah perilaku default link
         window.location.href = 'login.html'; // Arahkan ke login.html
     });
+  // Menangani klik pada gambar untuk menampilkan overlay
+document.querySelectorAll('.clickable-image').forEach(image => {
+  image.addEventListener('click', function() {
+      const overlay = document.getElementById('overlay');
+      const overlayImage = document.getElementById('overlay-image');
+      const overlayDescription = document.getElementById('overlay-description');
+      
+      // Mengubah sumber gambar dan deskripsi sesuai gambar yang diklik
+      overlayImage.src = this.src;
+      overlayDescription.textContent = this.getAttribute('data-description');
+      
+      // Menampilkan overlay
+      overlay.style.display = 'flex';
+  });
+});
+
+// Menangani klik tombol tutup untuk menyembunyikan overlay
+document.querySelector('.close-btn').addEventListener('click', function() {
+  document.getElementById('overlay').style.display = 'none';
+});
+
 });

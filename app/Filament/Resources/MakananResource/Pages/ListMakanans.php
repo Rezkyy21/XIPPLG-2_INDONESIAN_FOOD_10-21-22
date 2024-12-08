@@ -6,7 +6,7 @@ use App\Filament\Resources\MakananResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 
-class ListMakanans extends ListRecords
+class Listmakanans extends ListRecords
 {
     protected static string $resource = MakananResource::class;
 

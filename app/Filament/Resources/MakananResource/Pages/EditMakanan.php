@@ -6,7 +6,7 @@ use App\Filament\Resources\MakananResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditMakanan extends EditRecord
+class Editmakanan extends EditRecord
 {
     protected static string $resource = MakananResource::class;
 

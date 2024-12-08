@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
 
 //Route::get('/', function () {
 //    return view('index');  //merujuk ke file welcome.blade.php di folder resource/views

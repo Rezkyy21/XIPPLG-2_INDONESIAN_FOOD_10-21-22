@@ -6,19 +6,21 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Model;
 
+
 class makanan extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'deksripsi',
-        'harga',
+        'nama_makanan',
+        'deskripsi',
+        'kategori_id',
         'gambar',
-        'kategori_id'
+        'harga'
     ];
 
-    public function kategori(): BelongsTo
+    // Relasi dengan Kategori
+    public function kategori()
     {
         return $this->belongsTo(Kategori::class);
     }

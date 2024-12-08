@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class MakananResource extends Resource
+class makananResource extends Resource
 {
-    protected static ?string $model = Makanan::class;
+    protected static ?string $model = makanan::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -23,12 +23,12 @@ class MakananResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name'),
-                Forms\Components\TextInput::make('deksripsi'),
+                Forms\Components\TextInput::make('nama_makanan'),
+                Forms\Components\TextInput::make('deskripsi'),
                 Forms\Components\TextInput::make('harga'),
-                Forms\Components\TextInput::make('gambar'),
+                Forms\Components\FileUpload::make('gambar'),
                 Forms\Components\Select::make('kategori_id')
-                ->relationship('kategori', 'name')
+                ->relationship('kategori', 'nama_kategori')
                 ->required(),
             ]);
     }
@@ -37,15 +37,15 @@ class MakananResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
+                Tables\Columns\TextColumn::make('nama_makanan'),
                 Tables\Columns\TextColumn::make('deskripsi'),
                 Tables\Columns\TextColumn::make('harga'),
-                Tables\Columns\TextColumn::make('gambar'),
-                Tables\Columns\TextColumn::make('kategori.name'),
+                Tables\Columns\ImageColumn::make('gambar'),
+                Tables\Columns\TextColumn::make('kategori.nama_kategori'),
             ])
             ->filters([
                 Tables\Filters\SelectFilter::make('kategori_id')
-                ->relationship('kategori','name'),
+                ->relationship('kategori','nama_kategori'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),

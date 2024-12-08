@@ -23,7 +23,7 @@ class KategoriResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name'),
+                Forms\Components\TextInput::make('nama_kategori'),
             ]);
     }
 
@@ -31,7 +31,7 @@ class KategoriResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
+                Tables\Columns\TextColumn::make('nama_kategori'),
             ])
             ->filters([
                 //

@@ -6,7 +6,7 @@ use App\Filament\Resources\MakananResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateMakanan extends CreateRecord
+class Createmakanan extends CreateRecord
 {
     protected static string $resource = MakananResource::class;
 }

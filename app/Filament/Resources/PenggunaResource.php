@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class PenggunaResource extends Resource
+class penggunaResource extends Resource
 {
-    protected static ?string $model = Pengguna::class;
+    protected static ?string $model = pengguna::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -23,7 +23,8 @@ class PenggunaResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('nama_pengguna'),
+                Forms\Components\TextInput::make('password'),
             ]);
     }
 
@@ -31,7 +32,8 @@ class PenggunaResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('nama_pengguna'),
+                Tables\Columns\TextColumn::make('password'),
             ])
             ->filters([
                 //

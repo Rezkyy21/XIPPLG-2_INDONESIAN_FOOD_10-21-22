@@ -6,24 +6,76 @@
     <title>Indonesian Food</title>
     
     @vite('resources/css/app.css')
+    <style>
+        /* Overlay Styles */
+        #overlay {
+            position: fixed;
+            top: 20%;
+            left: 20%;
+            width: 60%;
+            height: 60%;
+            background: rgba(255, 255, 255,0.9);
+            background: size 60px;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 50;
+        }
+        #overlay img {
+            max-width: 215% !important;
+            max-height: 215% !important;
+            border-radius: 20px !important;
+            margin-left:10%;
+        }
+        #overlay .description {
+            margin-top: 20px;
+            margin-left:10px;
+            color: #1B1833;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        #overlay .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2rem;
+            color: #1B1833;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
     <nav class="bg-gray-800 fixed w-full z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <a href="#" class="text-xl font-bold">
-                    INDONESIAN<span class="text-yellow-500">FOOD</span>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <a href="#" class="text-xl font-bold">
+                INDONESIAN<span class="text-yellow-500">FOOD</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#makanan" class="hover:text-yellow-500 transition-colors">Makanan</a>
+                <a href="#kuliner" class="hover:text-yellow-500 transition-colors">Kuliner</a>
+                <a href="#About" class="hover:text-yellow-500 transition-colors">About us</a>
+                <span id="date-display" class="text-gray-300"></span>
+            </div>
+            <!-- Search Bar -->
+            <form class="hidden md:flex items-center space-x-2">
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    class="bg-gray-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring focus:ring-yellow-500"
+                />
+                <button
+                    type="submit"
+                    class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors"
+                >
+                    Search
+                </button>
+            </form>
+            <div class="flex items-center">
+                <a href="{{ route('login') }}" id="sign-up-link" class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors">
+                    Sign in
                 </a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#makanan" class="hover:text-yellow-500 transition-colors">Makanan</a>
-                    <a href="#kuliner" class="hover:text-yellow-500 transition-colors">Kuliner</a>
-                    <a href="#About" class="hover:text-yellow-500 transition-colors">About us</a>
-                    <span id="date-display" class="text-gray-300"></span>
-                </div>
-                <div class="flex items-center">
-    <a href="{{ route('login') }}" id="sign-up-link" class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors">
-        Sign in
     </a>
 </div>
             </div>
@@ -50,7 +102,7 @@
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-gray-800 rounded-lg overflow-hidden transition-transform hover:scale-105">
-                    <img src="/Assets/img/e2c517295da17c709cc0613acfdf8a91 (1).jpg" alt="Nasi Padang" class="w-full h-64 object-cover">
+                    <img src="/Assets/img/e2c517295da17c709cc0613acfdf8a91 (1).jpg" alt="Nasi Padang" class="w-full h-64 object-cover clickable-image" data-description="Nasi Padang adalah hidangan khas Minangkabau yang terkenal dengan kelezatan rempah-rempahnya.">
                     <h3 class="text-xl font-semibold p-4 text-center">Nasi Padang</h3>
                 </div>
                 <div class="bg-gray-800 rounded-lg overflow-hidden transition-transform hover:scale-105">
@@ -106,6 +158,12 @@
             </div>
         </div>
     </section>
+    
+    <div id="overlay">
+    <span class="close-btn">&times;</span>
+    <img src="" alt="Overlay Image" id="overlay-image">
+    <p class="description" id="overlay-description"></p>
+</div>
 
     <!-- About Section -->
     <section id="About" class="py-20 px-4">
@@ -149,4 +207,5 @@
         dateDisplay.textContent = new Date().toLocaleDateString('id-ID', options);
     </script>
 </body>
+<script src="/Assets/js/overlay.js"></script>
 </html>
